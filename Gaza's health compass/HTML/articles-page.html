@@ -8,65 +8,142 @@
     <meta name="keywords" content="Gaza,health">
     <meta name="author" content="test">
     <meta name="description" content="test">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4c3246fbb8.js" crossorigin="anonymous"></script>
+    <link href="../Style/style-searchpages.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="../Style/navstyle.css">
+    <link rel="stylesheet" href="../Style/footerstyle.css">
+    <link rel="stylesheet" href="../Style/style-aiChat.css">
 
 </head>
 
 <body>
-    <nav class="navbar"></nav>
 
-    <main>
-        <!--Header-->
-       <h1>All Articles</h1>
-
-        <!--Search bar-->
-        <div class="wrapper">
-            <div id="search-container">
-                <input type="search" id="search-input" placeholder="Search product name here.." />
-                <button id="search">Search</button>
-            </div>
-            <div id="buttons">
-                <button class="button-value" onclick="filterProduct('all')">All</button>
-                <button class="button-value" onclick="filterProduct('Topwear')">Woman</button>
-                <button class="button-value" onclick="filterProduct('Bottomwear')">Men</button>
-                <button class="button-value" onclick="filterProduct('Jacket')">Age 0-5</button>
-                <button class="button-value" onclick="filterProduct('Watch')">Age 6-10</button>
-            </div>
-            <div id="products"></div>
+    <!--Header and navbar-->
+    <header>
+        <div class="sticky-banner">
+            <h1>Resilience Rebuilders</h1>
         </div>
 
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="../pics/headerLogo.png" alt="Logo" class="logo">
+                <span class="site-name">Gaza's Health Compass</span>
+            </div>
+            <div class="nav-right">
+                <a href="#home"><img src="../pics/home.png" alt="Home"></a>
+                <a href="#" id="switch-language"><img src="../pics/language.png" alt="Switch Language"></a>
+                <button class="menu-toggle"><img src="../pics/menu.png" alt="Menu"></button>
+            </div>
+        </nav>
+
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#chat">Chat with our AI Nurse</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#" id="switch-language-menu">Switch Language</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!--Search bar-->
+        <h1>All Articles</h1>
+        <div class="wrapper">
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="Search here.." />
+                <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="filtering">
+                <div class="gender">
+                    <h3>Gender</h3>
+                    <div id="buttons ">
+                        <button class="button-value" onclick="filterinfo('man')">Men</button>
+                        <button class="button-value" onclick="filterinfo('woman')">Woman</button>
+                    </div>
+                </div>
+
+                <div class="age">
+                    <h3>Age Groups</h3>
+                    <div id="buttons age">
+                        <button class="button-value" onclick="filterinfo('child')">under 18</button>
+                        <button class="button-value" onclick="filterinfo('adult')">16-60</button>
+                        <button class="button-value" onclick="filterinfo('old')">60+</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="info">
+
+            </div>
+        </div>
 
         <!--Ai chatbot-->
-        <div class="chatBot">
-            <div class="title">
-                <h2>ChatBot</h2>
+        <div id="toggle" class="show-chatbot">
+            <button class="chatbox-toggler">
+                <div class="info">
+                    <p>Chat with AI nurse</p>
+                    <i class="fa-solid fa-user-nurse"></i>
+                </div>
+            </button>
+
+            <div class="chatBot">
+                <div class="Header">
+                    <h2>ChatBot</h2>
+                </div>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <i class="fa-solid fa-hippo"></i>
+                        <p>Hello! How can i help u hehe</p>
+                    </li>
+
+                    <li class="chat outgoing"></li>
+                </ul>
+
+                <div class="chat-input">
+                    <textarea placeholder="Enter a message.." id="Text"></textarea>
+                    <i class="fa-regular fa-paper-plane" id="enter-button"></i>
+                </div>
             </div>
-            <ul class="chatbox">
-                <li class="chat incoming">
-                    <i class="fa-solid fa-hippo"></i>
-                    <p>Hello! How can i help u hehe</p>
-                </li>
-
-                <li class="chat outgoing">
-                    <p>Lorem heis ehfwodi eiwhidl</p>
-                </li>
-            </ul>
-
-            <div class="chat-input">
-                <textarea placeholder="Enter a message.."></textarea>
-                <i class="fa-regular fa-paper-plane"></i>
-            </div>
-
         </div>
     </main>
 
-    <footer></footer>
+    <!-- Contact Us Section (Footer) -->
+    <footer class="contact-footer">
+        <h3 id="contact-us">Contact Us</h3>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">
+                <img src="../pics/instagram.png" alt="Instagram">
+            </a>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+            <a href="https://facebook.com" target="_blank">
+                <img src="../pics/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://twitter.com" target="_blank">
+                <img src="../pics/twitterx.png" alt="Twitter">
+            </a>
+
+        </div>
+        <hr class="footer-line">
+
+        <div class="reserved-section">
+            <img src="../pics/footerLogo.png" alt="Logo" class="footer-logo">
+            <p class="rights-reserved">All rights reserved © 2024</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/script-searchpages.js"></script>
+    <script src="../scripts/script-aiChat.js"></script>
+    <script src="../scripts/navbar.js"></script>
 </body>
 
 </html>
