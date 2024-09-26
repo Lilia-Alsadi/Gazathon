@@ -1,0 +1,113 @@
+/* Chatbot Full-Screen */
+
+main {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 120px);
+    /* Adjust according to your header and footer height */
+    overflow: hidden;
+    /* Prevent overflow */
+}
+
+.chatBot.full-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    /* Change from fixed to relative */
+    width: 90%;
+    height: calc(100% );
+    /* Adjust for header height */
+    background-color: #EBE6C1;
+    /* Existing color */
+    overflow: hidden;
+    transition: none;
+}
+
+.Header {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.chatbox {
+    width: 100%;
+    height: calc(100% - 180px);
+    /* Adjusted for the header and input area */
+    overflow-y: auto;
+    padding: 15px 20px;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.chat.incoming {
+    justify-content: flex-start;
+    /* Align incoming messages to the left */
+}
+
+.chat.incoming i {
+    height: 30px;
+    width: 30px;
+    color: white;
+    align-self: flex-end;
+    background: #023C40;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+    font-size: 1.2rem;
+}
+
+.chat p {
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    background-color: #D21124;
+    max-width: 75%;
+    margin-bottom: 10px;
+}
+
+.chat.incoming p {
+    color: black;
+    background-color: #51b351;
+    border-radius: 10px 10px 10px 0;
+}
+
+.chat.outgoing {
+    justify-content: flex-end;
+    /* Align outgoing messages to the right */
+}
+
+.chat input {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F0F0F0;
+    border: 1px solid #ccc;
+}
+
+.chat-input {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 20px;
+}
+
+.chat-input textarea {
+    flex-grow: 1;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+}
+
+#enter-button {
+    cursor: pointer;
+    color: #D21124;
+    font-size: 1.5rem;
+}

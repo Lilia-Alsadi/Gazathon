@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gaza's health compass</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/test.png" type="image/x-png">
+    <meta name="keywords" content="Gaza,health">
+    <meta name="author" content="test">
+    <meta name="description" content="test">
+    <script src="https://kit.fontawesome.com/4c3246fbb8.js" crossorigin="anonymous"></script>
+    <link href="../Style/style-searchpages.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="../Style/navstyle.css">
+    <link rel="stylesheet" href="../Style/footerstyle.css">
+    <link rel="stylesheet" href="../Style/style-aiChat.css">
+
+</head>
+
+<body>
+
+    <!--Header and navbar-->
+    <header>
+        <div class="sticky-banner">
+            <h1>Resilience Rebuilders</h1>
+        </div>
+    
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="../pics/headerLogo.png" alt="Logo" class="logo">
+                <span class="site-name">Gaza's Health Compass</span>
+            </div>
+            <div class="nav-right">
+                <a href="#home"><img src="../pics/home.png" alt="Home"></a>
+                <a href="#" id="switch-language"><img src="../pics/language.png" alt="Switch Language"></a>
+                <button class="menu-toggle"><img src="../pics/menu.png" alt="Menu"></button>
+            </div>
+        </nav>
+    
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#chat">Chat with our AI Nurse</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#" id="switch-language-menu">Switch Language</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <h1>All News</h1>
+        <!--Search bar-->
+        <div class="wrapper">
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="Search here.." />
+                <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="filtering">
+                <div class="gender" >
+                    <h3>Gender</h3>
+                    <div id="buttons ">
+                        <button class="button-value" onclick="filterinfo('Men')">Men</button>
+                        <button class="button-value" onclick="filterinfo('woman')">Woman</button>
+                    </div>
+                </div>
+       
+                <div class="age">
+                    <h3>Age Groups</h3>
+                    <div id="buttons age">
+                        <button class="button-value" onclick="filterinfo('0-18')">0-18</button>
+                        <button class="button-value" onclick="filterinfo('16-60')">16-60</button>
+                        <button class="button-value" onclick="filterinfo('60+')">60+</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="info">
+
+            </div>
+        </div>
+
+        <!--Ai chatbot-->
+        <div id="toggle" class="show-chatbot">
+            <a href="../HTML/chat-bot.html" class="chatbox-toggler">
+                <div class="info">
+                    <p>Chat with AI nurse</p>
+                    <i class="fa-solid fa-user-nurse"></i>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <!-- Contact Us Section (Footer) -->
+    <footer class="contact-footer">
+        <h3 id="contact-us">Contact Us</h3>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">
+                <img src="../pics/instagram.png" alt="Instagram">
+            </a>
+    
+            <a href="https://facebook.com" target="_blank">
+                <img src="../pics/facebook.png" alt="Facebook">
+            </a>
+    
+            <a href="https://twitter.com" target="_blank">
+                <img src="../pics/twitterx.png" alt="Twitter">
+            </a>
+    
+        </div>
+        <hr class="footer-line">
+    
+        <div class="reserved-section">
+            <img src="../pics/footerLogo.png" alt="Logo" class="footer-logo">
+            <p class="rights-reserved">All rights reserved © 2024</p>
+        </div>
+    </footer>
+
+        <script src="../scripts/script-searchpages.js"></script>
+        <script src="../scripts/script-aiChat.js"></script>
+        <script src="../scripts/navbar.js"></script>
+</body>
+
+</html>
