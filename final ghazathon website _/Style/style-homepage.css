@@ -1,0 +1,133 @@
+/* FONT */
+
+@font-face {
+    font-family: Merriweather;
+    src: url(../outside/Merriweather/Merriweather-Regular.ttf);
+}
+
+/* BODY/ALL */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Merriweather;
+    background: white;
+}
+
+/*Top image section*/
+.top_img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/*Titles*/
+.Title{
+    color: black;
+    size: 2.5rem;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/*sections*/
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*carasouls*/
+.cara {
+    text-align: center;
+    width: 90%;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cara .main-carousel {
+    width: 100%;
+    height: 450px;
+}
+
+.cara .carousel-cell {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: calc(100% / 3);
+    /* 3 cells visible at once */
+    height: 100%;
+    /* Ensures the height remains consistent */
+    margin-right: 10px;
+    /* Adds spacing between cells */
+    box-sizing: border-box;
+    /* Ensures padding/margin don't affect width */
+}
+
+.cara .carousel-cell .cell-caption {
+    margin-top: 15px;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+}
+
+.cara .carousel-cell a{
+    text-decoration: none;
+}
+
+.cara .flickity-button-icon {
+    fill:white;
+}
+
+.cara .flickity-button{
+
+    background:#44646D;
+}
+
+/* position outside */
+.cara .flickity-prev-next-button.previous {
+    left: -40px;
+    top: 150px;
+}
+
+.cara .flickity-prev-next-button.next {
+    right: -40px;
+    top: 150px;
+}
+
+.carousel-cell img {
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width:490){
+    .chatBot{
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .chatBot .chatbox{
+        height: 90%;
+    }
+
+
+}
+
+
+
+
