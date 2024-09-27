@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gaza's health compass</title>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../pics/headerLogo.png" type="image/x-png">
+    <meta name="keywords" content="Gaza,health">
+    <meta name="author" content="test">
+    <meta name="description" content="test">
+    <script src="https://kit.fontawesome.com/4c3246fbb8.js" crossorigin="anonymous"></script>
+    <link href="../Style/articlestyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="../Style/navstyle.css">
+    <link rel="stylesheet" href="../Style/footerstyle.css">
+    <link rel="stylesheet" href="../Style/style-aiChat.css">
+
+</head>
+
+<body>
+
+    <!--Header and navbar-->
+    <header>
+        <div class="sticky-banner">
+            <h1>Resilient Rebuilders</h1>
+        </div>
+
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="../HTML/index.html"> <img src="../pics/headerLogo.png" alt="Logo" class="logo"></a>
+                <a href="../HTML/index.html"> <span class="site-name">Gaza's Health Compass</span> </a>
+            </div>
+            <div class="nav-right">
+                <a href="../HTML/index.html"><img src="../pics/home.png" alt="Home"></a>
+                <a href="#" id="switch-language"><img src="../pics/language.png" alt="Switch Language"></a>
+                <button class="menu-toggle"><img src="../pics/menu.png" alt="Menu"></button>
+            </div>
+        </nav>
+
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li><a href="../HTML/articles-page.html">Articles</a></li>
+                <li><a href="../HTML/news-page.html">News</a></li>
+                <li><a href="../HTML/videos-page.html">Videos</a></li>
+                <li><a href="#" id="open-chat">Chat with our AI Nurse</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#" id="switch-language-menu">Switch Language</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+    <!-- Audio Button Container -->
+    <div class="audio-button-container">
+        <button id="playButton">Play Audio</button>
+    </div>
+
+    <main class="article-page">
+        <section class="article-container">
+
+            <audio id="myAudio">
+                <source src="audio-file.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div class="article-header-image-container">
+                <img src="../imgs/Unknown-14.jpg" alt="Header Image" class="article-header-image">
+            </div>
+
+            <h1 class="article-title">News Title</h1>
+
+
+            <p class="article-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis tellus vel
+                velit hendrerit blandit. Donec lorem massa, faucibus at vestibulum et, interdum et orci. Nam consequat
+                tincidunt ex eget rutrum. Integer non nibh sagittis risus commodo pellentesque. Vestibulum ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse nec mollis nulla. Nam
+                suscipit pretium posuere..</p>
+
+            <div class="article-content">
+
+
+                <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis tellus vel velit
+                    hendrerit blandit. Donec lorem massa, faucibus at vestibulum et, interdum et orci. Nam consequat
+                    tincidunt ex eget rutrum. Integer non nibh sagittis risus commodo pellentesque. Vestibulum ante
+                    ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse nec mollis
+                    nulla. Nam suscipit pretium posuere. Mauris commodo suscipit augue, in mollis mi venenatis sed.
+                    Suspendisse vel libero quis nisi vestibulum auctor.
+
+                    Etiam gravida, erat nec vehicula sodales, tortor leo cursus nisl, nec fringilla lacus mi non enim.
+                    Duis dignissim accumsan ultricies. Morbi dapibus pretium augue, eu ornare felis aliquet non. Sed
+                    volutpat nunc a viverra pretium. Etiam dictum ullamcorper elementum. Nam imperdiet elit porttitor
+                    fermentum malesuada. Aliquam erat volutpat. Duis a varius ipsum. In dignissim efficitur odio non
+                    scelerisque. Proin nec ipsum dictum, faucibus felis at, euismod tortor. Nulla facilisi. Maecenas
+                    condimentum sapien tellus, eu venenatis metus commodo quis. Nam egestas sapien orci, sit amet
+                    viverra nisi pulvinar vitae.
+
+                    Curabitur blandit massa in nulla commodo, vitae elementum lectus luctus. Praesent euismod dui odio,
+                    vitae euismod massa efficitur pellentesque. Fusce ullamcorper lacus cursus, condimentum nunc ac,
+                    porta lacus. Etiam congue urna risus, quis vehicula odio aliquam ornare. Suspendisse pellentesque
+                    turpis ac nunc fringilla posuere. Integer vel orci eros. Nam dignissim leo sed augue feugiat, eget
+                    congue metus commodo. Nulla ut mollis odio, in imperdiet justo. Vivamus lacinia nisi urna, sodales
+                    vehicula neque porttitor nec. Pellentesque dapibus orci eu leo tincidunt fermentum.
+
+                </article>
+
+        </section>
+    </main>
+
+    <!--Ai chatbot-->
+    <div id="toggle" class="show-chatbot">
+        <a href="../HTML/chat-bot.html" class="chatbox-toggler">
+            <div class="info">
+                <p>Chat with AI nurse</p>
+                <i class="fa-solid fa-user-nurse"></i>
+            </div>
+        </a>
+    </div>
+    </main>
+
+
+    <!-- Contact Us Section (Footer) -->
+    <footer class="contact-footer" id="contact">
+        <h3 id="contact-us">Contact Us</h3>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">
+                <img src="../pics/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+                <img src="../pics/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://twitter.com" target="_blank">
+                <img src="../pics/twitterx.png" alt="Twitter">
+            </a>
+
+        </div>
+        <hr class="footer-line">
+
+        <div class="reserved-section">
+            <img src="../pics/footerLogo.png" alt="Logo" class="footer-logo">
+            <p class="rights-reserved">All rights reserved © 2024</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/script-searchpages.js"></script>
+    <script src="../scripts/script-aiChat.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script>
+        // JavaScript to handle button click and play audio
+        const playButton = document.getElementById('playButton');
+        const myAudio = document.getElementById('myAudio');
+
+        playButton.addEventListener('click', function () {
+            myAudio.play();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Retrieve the stored video data
+            const Title = localStorage.getItem('Title');
+            const Description = localStorage.getItem('Description');
+            const Content = localStorage.getItem('Content');
+            const img = localStorage.getItem('img');
+
+            if (Title && Description && Content) {
+                document.querySelector('.article-title').textContent = Title;
+                document.querySelector('.article-intro').textContent = Description;
+                document.querySelector('.article-content').innerHTML = Content;
+                document.querySelector('.article-header-image').src = img;
+            }
+        });
+    </script>
+</body>
+
+</html>

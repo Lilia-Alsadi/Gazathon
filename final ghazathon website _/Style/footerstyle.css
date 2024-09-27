@@ -1,0 +1,139 @@
+.about-us {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ddd;
+}
+
+.about-box {
+    background-color: #CAE9F5;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 3000px;
+    text-align: center;
+}
+
+.about-box h3 {
+color: black;
+font-size: 2.5rem;
+}
+
+.about-photo {
+    width: 60%;
+    height: 450px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 18px;
+    color: #023C40;
+}
+
+
+/* Footer Section */
+.contact-footer {
+    background-color: #44646D;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%; /* Ensures the footer takes full width */
+    margin-top: auto; /* Pushes the footer to the bottom when content is short */
+}
+
+#contact-us {
+    color: black;
+    font-size: 22px ;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 60px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-line {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reserved-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-logo {
+    width: 40px; /* Adjust size of the logo */
+    margin-right: 10px;
+}
+
+.rights-reserved {
+    font-size: 16px;
+    color:black;
+    
+}
+
+/*chatbot style lol*/
+.chatbox-toggler {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    right: 50px;
+    bottom: 35px;
+    height: 40px;
+    width: 300px;
+    color:#44646D;
+    
+    outline: none;
+    background-color:#86C5D8;
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.chatbox-toggler .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.chatbox-toggler .info p {
+    margin: 0;
+    padding-right: 10px;
+    font-size: 1.1rem;
+    font-family: Merriweather;
+}
+
+.chatbox-toggler .info i {
+    font-size: 1.5rem;
+}
+
+#toggle a {
+    text-decoration: none;
+}
